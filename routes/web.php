@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::webhooks('webhook-phone-call', 'phoneCall');
+Route::webhooks('webhook-click', 'click');
 Route::get('/', function () {
     return view('welcome');
 });
